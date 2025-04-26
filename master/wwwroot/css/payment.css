@@ -1,0 +1,77 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+.payment-container {
+    background-color: #EAEAF7;
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+    .payment-form h2 {
+        color: #6273C3;
+        font-size: 22px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .payment-form input[type="text"] {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        outline-color: #6273C3;
+        background-color: #fff;
+        transition: box-shadow 0.3s;
+    }
+
+        .payment-form input[type="text"]:focus {
+            box-shadow: 0 0 5px rgba(98, 115, 195, 0.6);
+        }
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+    .row input {
+        flex: 1;
+    }
+
+.payment-form button {
+    background-color: #6273C3;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+    .payment-form button:hover {
+        background-color: #505ea5;
+    }
+
+/* Optional: Responsive layout */
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
+    }
+}

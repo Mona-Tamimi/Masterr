@@ -1,0 +1,105 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service-Career Compass</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    @* <link href="~/assets/css/main.css" rel="stylesheet"> *@
+
+    <link href="/css/servicePage.css" rel="stylesheet">
+    @* <link href="/css/h&f.css" rel="stylesheet"> *@
+
+
+    
+</head>
+
+<body>
+
+    <!-- navbar -->
+   
+    <!-- end of navbar -->
+    <!-- hero section  -->
+    <section class="hero">
+        <div class="back-btn-wrapper">
+            <a href="/Home/index" style="color: white;border-radius: 30px;margin-left: -88vw;
+             padding: 0.3vw 1vw;font-size:1.5vw;margin-top:-10vw!important"><i class="bi bi-house-door-fill"></i></a>
+        </div>
+        <div>
+            <h1>Our Services </h1>
+            <h3>Your Guide to Success</h3>
+        </div>
+    </section>
+    <!-- end of hero section  -->
+
+
+    <section class="service1 row" data-aos="fade-up">
+        <div class="s11 col-6">
+            <h2>Career Assessment Quiz</h2>
+            <p>
+                Take a personalized quiz designed to analyze your skills,<br>
+                interests, and goals, helping you discover the best<br>
+                academic or career path.
+            </p>
+            <button onclick="location.href='@Url.Action("SelectCategory", "Service")'">Take the Quiz</button>
+        </div>
+        <div class="s12 col-6">
+            <img class="img" src="~/img/service1.jpg">
+        </div>
+    </section>
+
+    <section class="service2 row" data-aos="fade-right">
+        <div class="s21 col-6">
+            <img class="img" src="~/img/service2.jpg">
+        </div>
+        <div class="s22 col-6">
+            <h2>Expert Consultation</h2>
+            <p>
+                Schedule one-on-one sessions with career experts to <br>
+                get tailored advice and guidance for your future.
+            </p>
+            <button onclick="location.href='/consultant/consultant'">Book a Session</button>
+        </div>
+    </section>
+
+    <section class="service3 row" data-aos="fade-left">
+        <div class="s31 col-6">
+            <h2>AI-Powered Career Guidance</h2>
+            <p>
+                Let our AI analyze your inputs and provide you with <br>
+                data-driven recommendations for your academic or <br>
+                career journey.
+            </p>
+            <button onclick="location.href='/Service/chatAI'">Chat with AI</button>
+        </div>
+        <div class="s32 col-6">
+            <img class="img" src="~/img/service3.jpg">
+        </div>
+    </section>
+    
+    <br>
+    <br>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

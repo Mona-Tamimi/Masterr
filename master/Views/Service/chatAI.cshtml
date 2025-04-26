@@ -1,0 +1,130 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Landing Page</title>
+    <link rel="stylesheet" href="/css/chatAI.css">
+    @* <link href="/css/h&f.css" rel="stylesheet"> *@
+
+
+</head>
+<body>
+  @* <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="~/img/logo111.png" alt="">
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#Hobbies">FAQ</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+    </header>*@
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>FIND YOUR PATH. SHAPE YOUR FUTURE!</h2>
+                <h1><span>AI-POWERED</span> CAREER GUIDANCE</h1>
+                <p>
+                    Take the first step toward your dream career with our personalized AI-driven guidance.
+                    Discover the best career options based on your skills and interests.
+                </p>
+                <button class="btn get-started">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="~/img/image-removebg-preview2.png" alt="AI Career Assistant">
+            </div>
+        </section>
+
+        <section class="effect-conversation">
+            <h3>How It Works →</h3>
+            <p id="conversation-text">Our AI chatbot analyzes your strengths, passions, and market trends to provide customized career suggestions.</p>
+            <div class="controls">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+        </section>
+
+        <!-- Chat Window (Initially Hidden) -->
+        <section id="chat-container" class="chat-container">
+            <div class="chat-header">
+                <h3>AI Career Chat</h3>
+                <button id="close-chat">✖</button>
+            </div>
+            <div id="chat-box" class="chat-box"></div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Ask about your career...">
+                <button id="send-btn">Send</button>
+            </div>
+        </section>
+    </main>
+  @*  <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="brand">
+                        <img src="/img/logo111.png" alt="Compass Icon" class="rounded-circle footimg">
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="links row">
+                        <a href="#" class="col-2">Home</a>
+                        <a href="#" class="col-2">Services</a>
+                        <a href="#" class="col-2">Contact</a>
+                        <a href="#" class="col-2">FAQ</a>
+                        <a href="#" class="col-2">About</a>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="mt-2">
+                                Startup Framework contains components and complex blocks which can easily be
+                                integrated into almost any design.
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <a href="#">Privacy Policy</a>
+                            <span>|</span>
+                            <a href="#">Terms</a>
+                        </div>
+                        <div class="social col-3">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-telephone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Moderna</strong> <span>All Rights Reserved</span></p>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you've purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                @* Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> 
+            </div>
+        </div>
+    </footer>*@
+    <script src="/js/chatAI.js"></script>
+
+</body>
+</html>

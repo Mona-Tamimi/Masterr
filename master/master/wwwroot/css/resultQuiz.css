@@ -1,0 +1,45 @@
+﻿/* General Styling */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2F1893, #5774EA, #7F81C5);
+    color: white;
+}
+
+/* Result Section */
+.hero {
+    width: 80%;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background: white;
+    color: #2F1893;
+}
+
+/* Major Image */
+.img {
+    width: 40%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #6273C3;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+    button:hover {
+        background-color: #4158D0;
+        transform: scale(1.1);
+    }

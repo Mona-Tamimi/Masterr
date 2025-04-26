@@ -1,0 +1,81 @@
+﻿.body {
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(40deg,#C2FAF1,#295E6A); */
+    background: linear-gradient(to right, color-mix(in srgb, #2F1893, transparent 40%), color-mix(in srgb, #2F1893, transparent 40%)), url("/img/hero-bg.jpg");
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: -8px;
+}
+
+form {
+    background-color: white;
+    padding: 1vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 40vw;
+    height: 20vw;
+}
+
+    form input[type="text"],
+    form input[type="password"] {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+#loginForm h2 {
+    color: #2F1893;
+}
+
+form a {
+    /* display: block; */
+    margin: 10px 0;
+    color: #5774EA;
+    text-decoration: none;
+    font-size: 0.9vw;
+}
+
+    form a:hover {
+        text-decoration: underline;
+    }
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5774EA;
+    color: white;
+    cursor: pointer;
+}
+
+    form button:hover {
+        background-color: #2F1893;
+    }
+
+@media (max-width :500px) {
+    form {
+        width: 80vw;
+        height: 70vw;
+    }
+
+        form input {
+        }
+
+        form a {
+            font-size: 2.5vw;
+        }
+}
+
+#ftco-navbar {
+    background-color: #295E6A !important;
+}
+
+#footer1 {
+    text-decoration: none !important;
+}

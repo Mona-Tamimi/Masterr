@@ -1,0 +1,319 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preference Survey</title>
+    <link rel="stylesheet" href="/">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+
+        .question-container {
+            background-color: #EAEAF7;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+        }
+
+            .question-container h2 {
+                color: #6273C3;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+            .option input {
+                margin-right: 10px;
+            }
+
+            .option label {
+                color: #6273C3;
+                font-size: 16px;
+            }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+            .navigation button {
+                background-color: #6273C3;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+                .navigation button:hover {
+                    background-color: #505ea5;
+                }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+            .steps .circle {
+                background-color: #EAEAF7;
+                color: #6273C3;
+                border: 2px solid #6273C3;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                margin: 0 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+                .steps .circle.active {
+                    background-color: #6273C3;
+                    color: white;
+                }
+
+                .steps .circle.answered {
+                    background-color: #6273C3;
+                    color: white;
+                }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .modal button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            background-color: #6273C3;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-container">
+        <div class="steps">
+            <div class="circle" data-step="0">1</div>
+            <div class="circle" data-step="1">2</div>
+            <div class="circle" data-step="2">3</div>
+            <div class="circle" data-step="3">4</div>
+            <div class="circle" data-step="4">5</div>
+        </div>
+
+        <h2 id="question">How do you prefer to work or learn?</h2>
+
+        <div id="options">
+            <div class="option">
+                <input type="radio" id="option1" name="preference">
+                <label for="option1">Independently, I like to focus on my own tasks and manage my time.</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option2" name="preference">
+                <label for="option2">In a Team, I enjoy collaborating with others and sharing ideas.</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option3" name="preference">
+                <label for="option3">With Hands-On Experience, I prefer practical, real-world applications of what I learn.</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option4" name="preference">
+                <label for="option4">With Detailed Instructions, I like clear guidance and structure.</label>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button id="back">Back</button>
+            <button id="next">Next</button>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <h2>Unlock the Full Quiz</h2>
+            <p>To continue, please complete your payment.</p>
+            <button id="goToPayment">Go to Payment</button>
+        </div>
+    </div>
+
+
+    <script>
+        const steps = document.querySelectorAll('.steps .circle');
+        const questionText = document.getElementById('question');
+        const optionsContainer = document.getElementById('options');
+        let currentStep = 0;
+        const answers = {};
+
+        const questions = [
+            {
+                question: "How do you prefer to work or learn?",
+                options: [
+                    "Independently, I like to focus on my own tasks and manage my time.",
+                    "In a Team, I enjoy collaborating with others and sharing ideas.",
+                    "With Hands-On Experience, I prefer practical, real-world applications of what I learn.",
+                    "With Detailed Instructions, I like clear guidance and structure."
+                ]
+            },
+            {
+                question: "What motivates you the most in your work or studies?",
+                options: [
+                    "Achieving personal goals.",
+                    "Collaborating with a great team.",
+                    "Learning practical skills.",
+                    "Receiving clear and constructive feedback."
+                ]
+            },
+            {
+                question: "How do you handle challenges or obstacles?",
+                options: [
+                    "I work independently to find solutions.",
+                    "I brainstorm ideas with others.",
+                    "I try hands-on methods to resolve the issue.",
+                    "I follow clear guidance and steps."
+                ]
+            },
+            {
+                question: "What kind of environment helps you be the most productive?",
+                options: [
+                    "A quiet and focused environment.",
+                    "A collaborative and energetic environment.",
+                    "An environment with tools and resources for hands-on work.",
+                    "An environment with clear rules and structure."
+                ]
+            },
+            {
+                question: "What is your preferred method of receiving feedback?",
+                options: [
+                    "Self-assessment and reflection.",
+                    "Group discussions and input from peers.",
+                    "Hands-on examples to improve my work.",
+                    "Detailed and structured feedback from a mentor."
+                ]
+            }
+        ];
+
+        function updateQuestion() {
+            const currentQuestion = questions[currentStep];
+            questionText.textContent = currentQuestion.question;
+
+            optionsContainer.innerHTML = "";
+            currentQuestion.options.forEach((optionText, index) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'option';
+
+                const input = document.createElement('input');
+                input.type = 'radio';
+                input.id = `option${index + 1}`;
+                input.name = 'preference';
+                input.checked = answers[currentStep] === optionText;
+
+                const label = document.createElement('label');
+                label.htmlFor = `option${index + 1}`;
+                label.textContent = optionText;
+
+                optionDiv.appendChild(input);
+                optionDiv.appendChild(label);
+                optionsContainer.appendChild(optionDiv);
+
+                input.addEventListener('change', () => {
+                    answers[currentStep] = optionText;
+                    steps[currentStep].classList.add('answered');
+                });
+            });
+        }
+
+        steps.forEach((circle, index) => {
+            circle.addEventListener('click', () => {
+                steps[currentStep].classList.remove('active');
+                currentStep = index;
+                steps[currentStep].classList.add('active');
+                updateQuestion();
+            });
+        });
+
+        document.getElementById('back').addEventListener('click', () => {
+            if (currentStep > 0) {
+                steps[currentStep].classList.remove('active');
+                currentStep--;
+                steps[currentStep].classList.add('active');
+                updateQuestion();
+            }
+        });
+
+        document.getElementById('next').addEventListener('click', () => {
+            const isAnswered = Array.from(document.getElementsByName('preference')).some(input => input.checked);
+
+            if (isAnswered) {
+                steps[currentStep].classList.add('answered');
+            }
+
+            if (currentStep < steps.length - 1) {
+                steps[currentStep].classList.remove('active');
+                currentStep++;
+                steps[currentStep].classList.add('active');
+                updateQuestion();
+            }
+        });
+         let currentQuestion = 0;
+        document.getElementById('next').addEventListener('click', function() {
+            currentQuestion++;
+            if (currentQuestion === 3) {
+                document.getElementById('paymentModal').style.display = 'block';
+            }
+        });
+
+        document.getElementById('goToPayment').addEventListener('click', function() {
+            window.location.href = '/Service/payment';
+        });
+        updateQuestion();
+    </script>
+</body>
+</html>

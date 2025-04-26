@@ -1,0 +1,70 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Payment</title>
+    <link rel="stylesheet" href="~/css/payment.css" />
+    <style>
+        .success-message {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            color: #4BB543;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="payment-container">
+        <form class="payment-form" id="paymentForm">
+            <h2>Payment Details</h2>
+
+            <input type="text" id="cardName" placeholder="Cardholder Name" required>
+            <input type="text" id="cardNumber" placeholder="Card Number" maxlength="16" required>
+
+            <div class="row">
+                <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required>
+                <input type="text" id="cvv" placeholder="CVV" maxlength="4" required>
+            </div>
+
+            <button type="submit">Pay & Continue Quiz</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+            ✅ Payment Successful! Redirecting...
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('paymentForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Simple front-end validation
+            const name = document.getElementById('cardName').value.trim();
+            const number = document.getElementById('cardNumber').value.trim();
+            const expiry = document.getElementById('expiry').value.trim();
+            const cvv = document.getElementById('cvv').value.trim();
+
+            if (!name || number.length < 13 || expiry.length < 4 || cvv.length < 3) {
+                alert("Please fill all fields correctly.");
+                return;
+            }
+
+            // Show success message
+            const message = document.getElementById('successMessage');
+            message.style.display = 'block';
+
+            // Redirect after 2 seconds
+            setTimeout(() => {
+                window.location.href = '/Quiz/Continue'; // Change to your actual next page route
+            }, 2000);
+        });
+    </script>
+
+</body>
+</html>

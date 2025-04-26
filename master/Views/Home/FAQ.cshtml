@@ -1,0 +1,126 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FQA-Career Compass</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="/css/FAQ.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section class="hero position-relative">
+        <div class="back-btn-wrapper">
+            <a href="/Home/index"  style="color: white;border-radius: 30px;margin-left: -88vw;
+             padding: 0.3vw 1vw;font-size:1.5vw;margin-top:-10vw!important"><i class="bi bi-house-door-fill"></i></a>
+        </div>
+
+        <div >
+            <h1>
+                <span class="highlighted-text">F</span>requently
+                <span class="highlighted-text">A</span>sked
+                <span class="highlighted-text">Q</span>uestion
+            </h1>
+        </div>
+    </section>
+
+
+
+    <section class="row">
+        <div class="f1 col-6">
+            <h3>Here you will find answers to your questions</h3>
+
+        </div>
+        <div class="f2 col-6">
+            <img class="img" src="/img/fqa.jpg">
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question">What is Career Compass?</button>
+                <div class="faq-answer">
+                    <p>Career Compass is an online platform designed to help students and professionals find the right career path based on their interests, skills, and aspirations. It also provides guidance for academic specialization selection.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How do I get started?</button>
+                <div class="faq-answer">
+                    <p>To get started, simply create an account, complete the career assessment quiz, and receive tailored career advice and expert consultations.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Is there a cost to use Career Compass?</button>
+                <div class="faq-answer">
+                    <p>No, Career Compass is free to use for all students and professionals who wish to explore career options and receive personalized guidance.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How accurate is the career assessment quiz?</button>
+                <div class="faq-answer">
+                    <p>The career assessment quiz is designed using scientifically-backed models to match your interests and skills with potential career paths. However, it's a helpful tool for exploration, and the results can vary based on individual preferences and experiences.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I get personalized career advice?</button>
+                <div class="faq-answer">
+                    <p>Yes! After completing the career quiz, you can book a consultation with one of our experts for personalized advice on career paths, academic specializations, and more.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you offer support for career changes?</button>
+                <div class="faq-answer">
+                    <p>Absolutely! Career Compass also provides guidance for individuals considering a career shift, helping you navigate the process based on your current skills and future aspirations.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I get advice on university specialization?</button>
+                <div class="faq-answer">
+                    <p>Yes! Career Compass helps guide students in choosing the right academic specialization by providing insights into the most suitable fields based on their interests, abilities, and career goals.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How can I stay updated with new features?</button>
+                <div class="faq-answer">
+                    <p>By subscribing to our newsletter or following our social media channels, you can stay updated with new features, career tips, and exclusive content offered by Career Compass.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Is my data safe on Career Compass?</button>
+                <div class="faq-answer">
+                    <p>Yes, your privacy is important to us. Career Compass employs secure encryption methods and privacy policies to ensure your personal data is kept safe and confidential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function () {
+                const faqItem = this.closest('.faq-item');
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
+

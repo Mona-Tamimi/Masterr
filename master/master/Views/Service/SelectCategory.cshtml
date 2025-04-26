@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Select Quiz Category";
+    Layout = "_Layout";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="text-center mb-0">Select Your Category</h2>
+                </div>
+                <div class="card-body">
+                    <p class="text-center mb-4">Please select the category that best describes your current situation:</p>
+
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card category-card h-100">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">High School</h3>
+                                    <p class="card-text">For students currently in or recently graduated from high school.</p>
+                                    <a href="@Url.Action("Quiz", "Service", new { category = "HighSchool" })" class="btn btn-primary mt-3">Select</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card category-card h-100">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">University</h3>
+                                    <p class="card-text">For current university students or recent graduates.</p>
+                                    <a href="@Url.Action("Quiz", "Service", new { category = "University" })" class="btn btn-primary mt-3">Select</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card category-card h-100">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Career Shifter</h3>
+                                    <p class="card-text">For professionals looking to change career paths.</p>
+                                    <a href="@Url.Action("Quiz", "Service", new { category = "CareerShifter" })" class="btn btn-primary mt-3">Select</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .category-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    .category-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+</style> 

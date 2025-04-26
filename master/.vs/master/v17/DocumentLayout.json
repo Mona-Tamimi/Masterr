@@ -1,0 +1,865 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\consultant\\consultant.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\consultant\\consultant.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\service\\servicepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\service\\servicepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\service\\resultquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\service\\resultquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\service\\quiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\service\\quiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\service\\selectcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\service\\selectcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\service\\duringquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\service\\duringquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\home\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\home\\faq.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\faq.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\faq.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\js\\profile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\js\\profile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\register.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\consultant\\consultantprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\consultant\\consultantprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\controllers\\consultantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\controllers\\consultantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\service\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\service\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\payment.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\payment.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\duringquiz.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\duringquiz.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\js\\duringquiz.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\js\\duringquiz.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\h\u0026f.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\h\u0026f.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\js\\consultantprofile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\js\\consultantprofile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\servicepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\servicepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\service\\chatai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\service\\chatai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\js\\chatai.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\js\\chatai.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\about.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\about.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\chatai.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\chatai.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\consultantprofile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\consultantprofile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\js\\resultquiz.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\js\\resultquiz.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\resultquiz.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\resultquiz.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\js\\consultant.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\js\\consultant.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\consultant.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\consultant.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|c:\\users\\orange\\desktop\\copy master\\master\\master\\wwwroot\\css\\quiz.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{46DAA513-6D8D-4089-8418-56F9416A8EE0}|master\\master.csproj|solutionrelative:master\\wwwroot\\css\\quiz.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SelectCategory.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\SelectCategory.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\Service\\SelectCategory.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\SelectCategory.cshtml",
+              "RelativeToolTip": "master\\Views\\Service\\SelectCategory.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAD4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-25T19:26:57.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "resultQuiz.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\resultQuiz.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\Service\\resultQuiz.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\resultQuiz.cshtml",
+              "RelativeToolTip": "master\\Views\\Service\\resultQuiz.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T19:49:00.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "servicePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\servicePage.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\Service\\servicePage.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\servicePage.cshtml",
+              "RelativeToolTip": "master\\Views\\Service\\servicePage.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T21:02:28.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Quiz.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\Quiz.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\Service\\Quiz.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\Quiz.cshtml",
+              "RelativeToolTip": "master\\Views\\Service\\Quiz.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T21:13:28.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "duringQuiz.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\duringQuiz.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\Service\\duringQuiz.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\duringQuiz.cshtml",
+              "RelativeToolTip": "master\\Views\\Service\\duringQuiz.cshtml",
+              "ViewState": "AgIAALUAAAAAAAAAAAAYwJEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T19:43:27.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "master\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-25T23:13:16.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "consultant.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\consultant\\consultant.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\consultant\\consultant.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\consultant\\consultant.cshtml",
+              "RelativeToolTip": "master\\Views\\consultant\\consultant.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAG0AAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T17:46:15.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "master\\Controllers\\ServiceController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "master\\Controllers\\ServiceController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAowHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T21:01:27.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Program.cs",
+              "RelativeDocumentMoniker": "master\\Program.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Program.cs",
+              "RelativeToolTip": "master\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T19:52:28.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "master\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Controllers\\UserController.cs",
+              "RelativeToolTip": "master\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAuwKoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T17:40:34.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\user\\profile.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\user\\profile.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\user\\profile.cshtml",
+              "RelativeToolTip": "master\\Views\\user\\profile.cshtml",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAuwJkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T17:56:51.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FAQ.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\FAQ.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\FAQ.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\FAQ.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\FAQ.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-11T21:04:44.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "master\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T11:22:44.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "master\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAIwA0BAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T11:42:56.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "profile.js",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\profile.js",
+              "RelativeDocumentMoniker": "master\\wwwroot\\js\\profile.js",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\profile.js",
+              "RelativeToolTip": "master\\wwwroot\\js\\profile.js",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwCoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-20T20:27:30.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "master\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "master\\Models\\MyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T19:24:58.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "master\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "master\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T11:33:18.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FAQ.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Home\\FAQ.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\Home\\FAQ.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Home\\FAQ.cshtml",
+              "RelativeToolTip": "master\\Views\\Home\\FAQ.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T21:03:37.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\user\\login.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\user\\login.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\user\\login.cshtml",
+              "RelativeToolTip": "master\\Views\\user\\login.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAFIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T17:56:03.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "master\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Models\\LoginModel.cs",
+              "RelativeToolTip": "master\\Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:04:25.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "master\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAYwDQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T11:34:59.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "main.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\assets\\css\\main.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\assets\\css\\main.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\assets\\css\\main.css",
+              "RelativeToolTip": "master\\wwwroot\\assets\\css\\main.css",
+              "ViewState": "AgIAAHAKAAAAAAAAAAAQwH0KAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-14T21:29:27.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Models\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "master\\Models\\RegisterModel.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Models\\RegisterModel.cs",
+              "RelativeToolTip": "master\\Models\\RegisterModel.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T23:46:18.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\appsettings.json",
+              "RelativeDocumentMoniker": "master\\appsettings.json",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\appsettings.json",
+              "RelativeToolTip": "master\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-24T06:02:35.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "profile.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\profile.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\profile.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\profile.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\profile.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-20T20:27:12.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\user\\register.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\user\\register.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\user\\register.cshtml",
+              "RelativeToolTip": "master\\Views\\user\\register.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAYwJQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T17:55:16.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "register.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\register.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\register.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\register.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\register.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-14T20:39:20.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "consultantProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\consultant\\consultantProfile.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\consultant\\consultantProfile.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\consultant\\consultantProfile.cshtml",
+              "RelativeToolTip": "master\\Views\\consultant\\consultantProfile.cshtml",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAYwL0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T17:50:20.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "master\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T23:48:25.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "consultantController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Controllers\\consultantController.cs",
+              "RelativeDocumentMoniker": "master\\Controllers\\consultantController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Controllers\\consultantController.cs",
+              "RelativeToolTip": "master\\Controllers\\consultantController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T17:44:58.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "consultantProfile.js",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\consultantProfile.js",
+              "RelativeDocumentMoniker": "master\\wwwroot\\js\\consultantProfile.js",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\consultantProfile.js",
+              "RelativeToolTip": "master\\wwwroot\\js\\consultantProfile.js",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-14T20:12:23.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "duringQuiz.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\duringQuiz.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\duringQuiz.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\duringQuiz.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\duringQuiz.css",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAQwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-14T19:44:27.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "duringQuiz.js",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\duringQuiz.js",
+              "RelativeDocumentMoniker": "master\\wwwroot\\js\\duringQuiz.js",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\duringQuiz.js",
+              "RelativeToolTip": "master\\wwwroot\\js\\duringQuiz.js",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAgwHUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-14T19:45:55.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "payment.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\payment.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\Service\\payment.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\payment.cshtml",
+              "RelativeToolTip": "master\\Views\\Service\\payment.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwEQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T23:15:28.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "payment.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\payment.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\payment.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\payment.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\payment.css",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-20T23:17:09.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "h\u0026f.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\h\u0026f.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\h\u0026f.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\h\u0026f.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\h\u0026f.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-15T15:26:32.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "register.js",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\register.js",
+              "RelativeDocumentMoniker": "master\\wwwroot\\js\\register.js",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\register.js",
+              "RelativeToolTip": "master\\wwwroot\\js\\register.js",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwE4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-14T20:39:48.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "servicePage.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\servicePage.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\servicePage.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\servicePage.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\servicePage.css",
+              "ViewState": "AgIAAE4AAAAAAAAAAIBJwA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-10T21:06:12.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "chatAI.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\chatAI.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\Service\\chatAI.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Service\\chatAI.cshtml",
+              "RelativeToolTip": "master\\Views\\Service\\chatAI.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T21:37:33.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "chatAI.js",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\chatAI.js",
+              "RelativeDocumentMoniker": "master\\wwwroot\\js\\chatAI.js",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\chatAI.js",
+              "RelativeToolTip": "master\\wwwroot\\js\\chatAI.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-10T21:39:20.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "about.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\about.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\about.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\about.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\about.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-10T11:37:53.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "chatAI.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\chatAI.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\chatAI.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\chatAI.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\chatAI.css",
+              "ViewState": "AgIAAKsAAAAAAAAAAIBJwNQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-10T21:38:24.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "main.js",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\assets\\js\\main.js",
+              "RelativeDocumentMoniker": "master\\wwwroot\\assets\\js\\main.js",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\assets\\js\\main.js",
+              "RelativeToolTip": "master\\wwwroot\\assets\\js\\main.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-15T15:03:04.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "login.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\login.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\login.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\login.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\login.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-14T21:13:53.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "master\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "master\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T21:23:09.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-14T21:27:22.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "consultantProfile.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\consultantProfile.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\consultantProfile.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\consultantProfile.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\consultantProfile.css",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAQwMEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-14T20:13:29.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "resultQuiz.js",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\resultQuiz.js",
+              "RelativeDocumentMoniker": "master\\wwwroot\\js\\resultQuiz.js",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\resultQuiz.js",
+              "RelativeToolTip": "master\\wwwroot\\js\\resultQuiz.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-14T19:50:24.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "resultQuiz.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\resultQuiz.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\resultQuiz.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\resultQuiz.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\resultQuiz.css",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-14T19:50:43.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "consultant.js",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\consultant.js",
+              "RelativeDocumentMoniker": "master\\wwwroot\\js\\consultant.js",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\js\\consultant.js",
+              "RelativeToolTip": "master\\wwwroot\\js\\consultant.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-10T21:29:04.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Quiz.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\Quiz.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\Quiz.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\Quiz.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\Quiz.css",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAQwKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-10T21:14:44.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "consultant.css",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\consultant.css",
+              "RelativeDocumentMoniker": "master\\wwwroot\\css\\consultant.css",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\COPY master\\master\\master\\wwwroot\\css\\consultant.css",
+              "RelativeToolTip": "master\\wwwroot\\css\\consultant.css",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAQwKgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-10T21:26:34.761Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

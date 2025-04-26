@@ -1,0 +1,401 @@
+﻿@using master.Models
+@using Newtonsoft.Json
+@{
+    Layout = null;
+    List<Question> questions = ViewBag.Questions ?? new List<Question>();
+    string errorMessage = ViewBag.ErrorMessage as string;
+
+    // Configure JSON serializer settings to ignore circular references
+    var serializerSettings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preference Survey - @ViewBag.SelectedCategory</title>
+    <link rel="stylesheet" href="/">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+
+        .question-container {
+            background-color: #EAEAF7;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+        }
+
+            .question-container h2 {
+                color: #6273C3;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+        .category-badge {
+            display: inline-block;
+            background-color: #6273C3;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+            .option input {
+                margin-right: 10px;
+            }
+
+            .option label {
+                color: #6273C3;
+                font-size: 16px;
+            }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+            .navigation button {
+                background-color: #6273C3;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+                .navigation button:hover {
+                    background-color: #505ea5;
+                }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+            .steps .circle {
+                background-color: #EAEAF7;
+                color: #6273C3;
+                border: 2px solid #6273C3;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                margin: 0 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+                .steps .circle.active {
+                    background-color: #6273C3;
+                    color: white;
+                }
+
+                .steps .circle.answered {
+                    background-color: #6273C3;
+                    color: white;
+                }
+
+        .finished-quiz {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+            .finished-quiz button {
+                background-color: #4BB543;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 25px;
+                font-size: 16px;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+
+        .no-questions {
+            text-align: center;
+            color: #6273C3;
+            margin: 20px 0;
+        }
+
+        .error-message {
+            background-color: #ffebee;
+            color: #c62828;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .debug-info {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            font-size: 12px;
+            max-height: 200px;
+            overflow: auto;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-container">
+        <div class="category-badge">Category: @ViewBag.SelectedCategory</div>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="error-message">
+                <p>@errorMessage</p>
+                <a href="@Url.Action("SelectCategory", "Service")" class="btn btn-primary">Try Another Category</a>
+            </div>
+        }
+        else if (questions.Count == 0)
+        {
+            <div class="no-questions">
+                <p>No questions available for this category. Please try another category or contact support.</p>
+                <a href="@Url.Action("SelectCategory", "Service")" class="btn btn-primary">Go Back</a>
+            </div>
+        }
+        else
+        {
+            <div class="steps">
+                @for (int i = 0; i < questions.Count; i++)
+                {
+                    <div class="circle" data-step="@i">@(i + 1)</div>
+                }
+            </div>
+
+            <h2 id="question">@questions.FirstOrDefault()?.QuestionText</h2>
+
+            <div id="options">
+                @if (questions.Any() && questions.First().QuestionOptions.Any())
+                {
+                    @foreach (var option in questions.First().QuestionOptions)
+                    {
+                        <div class="option">
+                            <input type="radio" id="option@(option.OptionId)" name="preference">
+                            <label for="option@(option.OptionId)">@option.OptionText</label>
+                        </div>
+                    }
+                }
+            </div>
+
+            <div id="finished-section" class="finished-quiz" style="display: none;">
+                <h3>Quiz Completed!</h3>
+                <p>Thank you for completing the quiz. Click below to see your results.</p>
+                <button id="seeResults">See Results</button>
+            </div>
+
+            <div class="navigation">
+                <button id="back">Back</button>
+                <button id="next">Next</button>
+            </div>
+
+            <!-- Debug output to check data structure -->
+            <div class="debug-info" id="debug-info">
+                First question text: @(questions.FirstOrDefault()?.QuestionText ?? "No question text")
+
+                Options count: @(questions.FirstOrDefault()?.QuestionOptions?.Count() ?? 0)
+
+                @if (questions.Any() && questions.First().QuestionOptions.Any())
+                {
+                    <div>First option text: @questions.First().QuestionOptions.First().OptionText</div>
+                }
+            </div>
+        }
+    </div>
+
+    <script>
+        // For debugging - press d key to show debug info
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'd') {
+                document.getElementById('debug-info').style.display =
+                    document.getElementById('debug-info').style.display === 'none' ? 'block' : 'none';
+            }
+        });
+
+        // Convert C# model to JavaScript array with settings to avoid circular references
+        const dbQuestions = @Html.Raw(JsonConvert.SerializeObject(questions, serializerSettings));
+
+        // Debug output to console
+        console.log("Questions data:", dbQuestions);
+
+        const steps = document.querySelectorAll('.steps .circle');
+        const questionText = document.getElementById('question');
+        const optionsContainer = document.getElementById('options');
+        const finishedSection = document.getElementById('finished-section');
+        const navigationButtons = document.querySelector('.navigation');
+        let currentStep = 0;
+        const answers = {};
+
+        // Get the selected category from the page
+        const selectedCategory = "@ViewBag.SelectedCategory";
+
+        function updateQuestion() {
+            if (!dbQuestions || dbQuestions.length === 0 || currentStep >= dbQuestions.length) {
+                console.error("No questions available or current step is out of range");
+                return;
+            }
+
+            const currentQuestion = dbQuestions[currentStep];
+            console.log("Current question:", currentQuestion);
+
+            // Check if questionText exists and update the display
+            if (currentQuestion.questionText) {
+                questionText.textContent = currentQuestion.questionText;
+            } else if (currentQuestion.QuestionText) {
+                // Try with capital letter if camelCase doesn't work
+                questionText.textContent = currentQuestion.QuestionText;
+            } else {
+                console.error("Question text not found in:", currentQuestion);
+                questionText.textContent = "Question text not available";
+            }
+
+            optionsContainer.innerHTML = "";
+
+            // Get the options property with correct casing
+            const questionOptions = currentQuestion.questionOptions ||
+                                   currentQuestion.QuestionOptions ||
+                                   [];
+
+            console.log("Question options:", questionOptions);
+
+            if (questionOptions && questionOptions.length > 0) {
+                questionOptions.forEach((option) => {
+                    if (!option) {
+                        console.warn("Null option found, skipping");
+                        return;
+                    }
+
+                    const optionDiv = document.createElement('div');
+                    optionDiv.className = 'option';
+
+                    const input = document.createElement('input');
+                    input.type = 'radio';
+
+                    // Get option ID with correct casing
+                    const optionId = option.optionId || option.OptionId;
+                    if (!optionId) {
+                        console.warn("Option ID not found:", option);
+                    }
+
+                    input.id = `option${optionId}`;
+                    input.name = 'preference';
+                    input.checked = answers[currentStep] === optionId;
+
+                    const label = document.createElement('label');
+                    label.htmlFor = `option${optionId}`;
+
+                    // Get option text with correct casing
+                    const optionText = option.optionText || option.OptionText;
+                    if (!optionText) {
+                        console.warn("Option text not found:", option);
+                        label.textContent = "Option text not available";
+                    } else {
+                        label.textContent = optionText;
+                    }
+
+                    optionDiv.appendChild(input);
+                    optionDiv.appendChild(label);
+                    optionsContainer.appendChild(optionDiv);
+
+                    input.addEventListener('change', () => {
+                        answers[currentStep] = optionId;
+                        steps[currentStep].classList.add('answered');
+                    });
+                });
+            } else {
+                console.error("No options found for question");
+                optionsContainer.innerHTML = "<p>No options available for this question.</p>";
+            }
+        }
+
+        if (steps.length > 0) {
+            steps.forEach((circle, index) => {
+                circle.addEventListener('click', () => {
+                    steps[currentStep].classList.remove('active');
+                    currentStep = index;
+                    steps[currentStep].classList.add('active');
+                    updateQuestion();
+                });
+            });
+
+            document.getElementById('back').addEventListener('click', () => {
+                if (currentStep > 0) {
+                    steps[currentStep].classList.remove('active');
+                    currentStep--;
+                    steps[currentStep].classList.add('active');
+                    updateQuestion();
+                }
+            });
+
+            document.getElementById('next').addEventListener('click', () => {
+                const isAnswered = Array.from(document.getElementsByName('preference')).some(input => input.checked);
+
+                if (isAnswered) {
+                    steps[currentStep].classList.add('answered');
+                }
+
+                if (currentStep < steps.length - 1) {
+                    steps[currentStep].classList.remove('active');
+                    currentStep++;
+                    steps[currentStep].classList.add('active');
+                    updateQuestion();
+                } else {
+                    // Show completion screen when all questions are answered
+                    optionsContainer.style.display = 'none';
+                    questionText.style.display = 'none';
+                    navigationButtons.style.display = 'none';
+                    finishedSection.style.display = 'block';
+                }
+            });
+
+            document.getElementById('seeResults').addEventListener('click', function() {
+                // Store answers in localStorage before redirecting
+                localStorage.setItem('quizAnswers', JSON.stringify(answers));
+                window.location.href = '@Url.Action("resultQuiz", "Service", new { category = ViewBag.SelectedCategory })';
+            });
+
+            // Initialize first question
+            if (steps.length > 0) {
+                steps[0].classList.add('active');
+                updateQuestion();
+            }
+        } else {
+            console.error("No steps found, questions may not be loading properly");
+        }
+    </script>
+</body>
+</html>
+

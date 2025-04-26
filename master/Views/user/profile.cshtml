@@ -1,0 +1,159 @@
+﻿@model master.Models.RegisterModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+    <link rel="shortcut icon" href="/img/logoicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/css/main.css" rel="stylesheet" />
+    <link href="~/css/h&f.css" rel="stylesheet" />
+    <link href="~/css/profile.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl d-flex justify-content-between align-items-center">
+            <a href="/Home/index" class="logo d-flex align-items-center">
+                <img src="~/img/logo111.png" alt="Logo" />
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="/Home/index" class="active">Home</a></li>
+                    <li><a href="/Service/ServicePage">Services</a></li>
+                    <li><a href="/Home/Contact">Contact</a></li>
+                    <li><a href="/Home/About">About</a></li>
+                    <li><a href="/Home/FAQ">FAQ</a></li>
+                    <li><a href="/User/Profile">Profile</a></li>
+                    <li><a href="/User/Logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container d-flex justify-content-center align-items-center" style="min-height: 100vh; padding-top: 100px;">
+        <div class="profile-container shadow bg-light rounded p-4">
+            <h3 class="text-center mb-4">Welcome, @Model.Name</h3>
+            <div class="text-center">
+                <img id="profilePic" src="@(!string.IsNullOrEmpty(Model.Img) ? Url.Content(Model.Img) : "/img/default-profile.png")" class="img-thumbnail rounded-circle mb-3" style="width: 150px; height: 150px;" />
+            </div>
+            <p><strong>Name:</strong> @Model.Name</p>
+            <p><strong>Email:</strong> @Model.Email</p>
+            <p><strong>Phone:</strong> @Model.PhoneNumber</p>
+            <p><strong>City:</strong> @Model.City</p>
+
+            <div class="text-center">
+                <button class="btn btn-primary mt-3" onclick="openEditModal()">Edit Profile</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- ✅ Modal -->
+    <div id="editProfileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEditModal()">&times;</span>
+            <h4>Edit Profile</h4>
+
+            <form asp-action="UpdateProfile" asp-controller="User" method="post" enctype="multipart/form-data" class="p-4 shadow bg-white rounded">
+
+                <input type="hidden" name="Id" value="@Model.Id" />
+
+                <div class="mb-3 form-floating">
+                    <input type="text" name="Name" class="form-control" id="nameInput" value="@Model.Name" placeholder="Full Name" required />
+                    <label for="nameInput">Full Name</label>
+                </div>
+
+                <div class="mb-3 form-floating">
+                    <input type="email" name="Email" class="form-control" id="emailInput" value="@Model.Email" placeholder="Email" readonly />
+                    <label for="emailInput">Email (read-only)</label>
+                </div>
+
+                <div class="mb-3 form-floating">
+                    <input type="text" name="PhoneNumber" class="form-control" id="phoneInput" value="@Model.PhoneNumber" placeholder="Phone Number" />
+                    <label for="phoneInput">Phone Number</label>
+                </div>
+
+                <div class="mb-3 form-floating">
+                    <select name="City" class="form-select" id="citySelect" required>
+                        <option value="" disabled>Select City</option>
+                        <option value="Amman" selected="@(Model.City == "Amman")">Amman</option>
+                        <option value="Irbid" selected="@(Model.City == "Irbid")">Irbid</option>
+                        <option value="Zarqa" selected="@(Model.City == "Zarqa")">Zarqa</option>
+                        <option value="Aqaba" selected="@(Model.City == "Aqaba")">Aqaba</option>
+                        <option value="Madaba" selected="@(Model.City == "Madaba")">Madaba</option>
+                        <option value="Jerash" selected="@(Model.City == "Jerash")">Jerash</option>
+                        <option value="Salt" selected="@(Model.City == "Salt")">Salt</option>
+                        <option value="Ajloun" selected="@(Model.City == "Ajloun")">Ajloun</option>
+                        <option value="Tafilah" selected="@(Model.City == "Tafilah")">Tafilah</option>
+                        <option value="Ma'an" selected="@(Model.City == "Ma'an")">Ma'an</option>
+                        <option value="Karak" selected="@(Model.City == "Karak")">Karak</option>
+                        <option value="Mafraq" selected="@(Model.City == "Mafraq")">Mafraq</option>
+                        <option value="Balqa" selected="@(Model.City == "Balqa")">Balqa</option>
+                    </select>
+                    <label for="citySelect">City</label>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label d-block">Upload Profile Image</label>
+                    <input type="file" class="form-control" id="imageUpload" name="ProfileImage" accept="image/*" onchange="previewImage(event)" />
+                    <img id="imagePreview" src="@Url.Content(Model.Img)" class="img-thumbnail mt-2" style="width: 100px; @(Model.Img != null ? "" : "display:none;")" />
+                </div>
+
+                <button type="submit" class="btn btn-success w-100">Save Changes</button>
+            </form>
+
+        </div>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Profile Updated',
+                text: '@TempData["SuccessMessage"]',
+                confirmButtonColor: '#5774EA'
+            });
+        </script>
+    }
+
+    <script>
+        function openEditModal() {
+            document.getElementById("editProfileModal").style.display = "block";
+        }
+
+        function closeEditModal() {
+            document.getElementById("editProfileModal").style.display = "none";
+        }
+
+        function previewImage(event) {
+            const reader = new FileReader();
+            reader.onload = function () {
+                const preview = document.getElementById('imagePreview');
+                preview.src = reader.result;
+                preview.style.display = 'block';
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Profile Updated',
+                text: '@TempData["SuccessMessage"]',
+                confirmButtonColor: '#5774EA'
+            });
+        </script>
+    }
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
